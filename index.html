@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Calculatrice GENC en javascript</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        <div id="block">
+            <form name="gencCalc">
+                <table class="calculatrice" id="calc" border="1" cellspacing="1">
+                    <caption>GENC CALCULATRICE</caption>
+                    <tr>
+                        <td colspan="4" class="calc_td_resultat">
+                            <input type="text" readonly name="ecran" value="0" id="calc_resultat" class="calc_resultat" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="calc_td_btn">
+                            <input type="button" name="effacer" value="Effacer" onclick="elementRecup('clean')" class="btneffacer" />
+                        </td>
+                        <td class="calc_td_btn"><input type="button" value="" /></td>
+                        <td class="calc_td_btn"><input type="button" value="" /></td>
+                        <td class="calc_td_btn">
+                            <input type="button" class="calc_func_btn" value="/" onclick="elementRecup('/')" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="calc_td_btn"><input type="button" name="btn7" value="7" onclick="elementRecup('7')" /></td>
+                        <td class="calc_td_btn"><input type="button" name="btn8" value="8" onclick="elementRecup('8')" /></td>
+                        <td class="calc_td_btn"><input type="button" name="btn9" value="9" onclick="elementRecup('9')" /></td>
+                        <td class="calc_td_btn">
+                            <input type="button" name="btnmulti" class="calc_func_btn" value="x" onclick="elementRecup('*')" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="calc_td_btn"><input type="button" name="btn4" value="4" onclick="elementRecup('4')" /></td>
+                        <td class="calc_td_btn"><input type="button" name="btn5" value="5" onclick="elementRecup('5')" /></td>
+                        <td class="calc_td_btn"><input type="button" name="btn6" value="6" onclick="elementRecup('6')" /></td>
+                        <td class="calc_td_btn">
+                            <input type="button" name="btnsoust" class="calc_func_btn" value="-" onclick="elementRecup('-')" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="calc_td_btn"><input type="button" name="btn1" value="1" onclick="elementRecup('1')" /></td>
+                        <td class="calc_td_btn"><input type="button" name="btn2" value="2" onclick="elementRecup('2')" /></td>
+                        <td class="calc_td_btn"><input type="button" name="btn3" value="3" onclick="elementRecup('3')" /></td>
+                        <td class="calc_td_btn">
+                            <input type="button" name="btnAdd" class="calc_func_btn" value="+" onclick="elementRecup('+')" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="calc_td_btn" colspan="2"><input type="button" name="btn0" value="0" onclick="elementRecup('0')" /></td>
+                        <td class="calc_td_btn"><input type="button" name="btnpoint" value="." onclick="elementRecup('.')" /></td>
+                        <td class="calc_td_btn">
+                            <input type="button" name="egal" class="btnegal" value="=" onclick="reponse()" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
